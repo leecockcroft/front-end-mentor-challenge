@@ -142,23 +142,25 @@ padding-top:2rem;
 @media (min-width:900px){
 
 body{
-  display: flex;
+
 height: 100vh;
-justify-content: Center;
-align-items: center;
+
 
 }
   .wrapper{
-    max-width:1440px;
-    margin:auto;
-    display:grid;
-      grid-template-columns: 5% 30% 30% 25% 7.5%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:". nav nav nav ."
-                        ". header header side ."
-                        ". main main side ."
-                        ". bottom bottom bottom .";
-    grid-gap: 2rem;
+    max-width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+      " nav nav nav "
+      " header header side "
+      "main main side "
+      " bottom bottom bottom ";
+  grid-gap: 2rem;
+  /* max-width: 69.5rem; */
+  margin: auto;
+  padding-inline: 0;
+  padding-top: 5rem;
 
 
   }
@@ -208,33 +210,40 @@ width: 35%;
         width:100%;
   }
   main {
-    grid-area:main;
-    display:flex;
-    padding-top:0;
+    grid-area: main;
+  /* padding-top: 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  place-items: center;
   }
 
+main h1 {
+  font-size: clamp(4.5rem, 4vw, 5rem);
+    line-height: 5rem;
+    width: 70%;
+}
+.right p {
+  padding: 0;
+width: 80%;
 
+margin-bottom: 2rem;
+}
 
-  main button {
-    display:block;
-  }
   aside{
     grid-area:side;
   }
-  main section{
-      width:50%;
-  
-  }
+
 
   main h1 {
-    width: 80%;
+
 
   }
 
   .right p {
     padding:0;
   }
-  section{
+  .bottom{
     grid-area:bottom;
 
   }
@@ -260,5 +269,10 @@ width: 35%;
 
     .bottom-text h3 {
       padding-top:0;
+    }
+
+    .main-cta {
+      background:hsl(5, 85%, 63%);
+          font-size: 1.5rem;
     }
 }
