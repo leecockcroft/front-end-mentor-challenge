@@ -164,7 +164,9 @@ height: 100vh;
 
 
   }
-
+.logo{
+  width:6rem;
+}
   nav,main {
     display:flex;
   }
@@ -195,8 +197,8 @@ aside{
 
   .desktop-nav ul li {
     font-size: 1.6rem;
-    /* color: hsl(233, 8%, 79%); */
-    list-style: none;
+   color: hsl(233, 8%, 79%);
+       list-style: none;
   }
 
   .desktop-nav {
@@ -226,7 +228,7 @@ main h1 {
 .right p {
   padding: 0;
 width: 80%;
-
+   color: hsl(233, 8%, 79%);
 margin-bottom: 2rem;
 }
 
