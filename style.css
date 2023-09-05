@@ -197,7 +197,7 @@ aside{
 
   .desktop-nav ul li {
     font-size: 1.6rem;
-   color: hsl(233, 8%, 79%);
+   color:hsl(240, 100%, 5%);
        list-style: none;
   }
 
@@ -228,7 +228,7 @@ main h1 {
 .right p {
   padding: 0;
 width: 80%;
-   color: hsl(233, 8%, 79%);
+   color:hsl(240, 100%, 5%);
 margin-bottom: 2rem;
 }
 
